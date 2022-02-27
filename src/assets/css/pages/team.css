@@ -1,0 +1,17 @@
+#team > .main_section
+{
+    padding: 40px 20px;
+}
+
+#team > .main_section > div > .card
+{
+    max-width: 300px;
+    padding-top: 15px;
+    height: 100%;
+}
+
+#team > .main_section > div > .card > img
+{
+    border-radius: 360%;
+    max-width: 50%;
+}

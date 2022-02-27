@@ -1,0 +1,189 @@
+#course > .main_section
+{
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+#course > .main_section .nav
+{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+#course > .main_section .nav > .title
+{
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+
+#course > .main_section .nav > .title > p
+{
+    font-size: 18px
+}
+
+#course > .main_section .nav > .close
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    box-shadow: 0 0 4px 1px grey;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#course > .main_section .nav > .close > p
+{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#course > .main_section > .tab-content > .tab-pane
+{
+    padding: 10px;
+}
+
+#course > .main_section > .tab-content > .tab-pane > .tum
+{
+    padding-bottom: 10px;
+}
+
+#course > .main_section > .tab-content > .tab-pane > .tum > img
+{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #80808096;
+}
+
+#course > .main_section .mobile
+{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#course > .main_section .mobile > div:first-child > p
+{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1250px)
+{
+    #course > .main_section { flex-direction: column; padding: 20px!important; }
+    #course > .main_section .mobile { display: flex!important; }
+
+    #course > .main_section .nav > .close
+    {
+        display: flex!important;
+    }
+
+    #course > .main_section .nav
+    {
+        display: none;
+        z-index: 9999;
+        border-radius: 0;
+        position: fixed;
+        margin: 0!important;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 50px;
+        overflow: scroll;
+    }
+
+    #course > .main_section .nav.show
+    {
+        display: block!important;
+    }
+}
+
+#course > .main_section .nav-link
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap!important;
+    text-align: right;
+}
+
+#course > .main_section .nav-link.title
+{
+    background-color: #ff9100!important;
+    color: white!important;
+}
+
+#course > .main_section .nav-link.active
+{
+    background-color: #0e41b8;
+}
+
+#course > .main_section .tab-content table
+{
+    border: 1px solid black;
+    direction: rtl;
+    text-align: center;
+    margin: 10px auto!important;
+    width: 100%;
+}
+
+#course > .main_section .tab-content table td, th
+{
+    border: 1px solid black;
+    padding: 5px;
+    overflow-wrap: anywhere;
+    direction: rtl;
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    table { border: none!important; }
+    table thead { display: none; }
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+    table td:last-child { border-bottom: 0; }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
